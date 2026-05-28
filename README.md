@@ -12,7 +12,7 @@ A collection of project solutions for the **freeCodeCamp Data Analysis with Pyth
 
 | # | Project | Status |
 |---|---|---|
-| 1 | Mean-Variance-Standard Deviation Calculator | ⬜ In Progress |
+| 1 | Mean-Variance-Standard Deviation Calculator | ✅ Completed |
 | 2 | Demographic Data Analyzer | ⬜ In Progress |
 | 3 | Medical Data Visualizer | ✅ Completed |
 | 4 | Page View Time Series Visualizer | ⬜ In Progress |
@@ -25,6 +25,9 @@ A collection of project solutions for the **freeCodeCamp Data Analysis with Pyth
 ```
 DataAnalysisWithPython/
 ├── Mean-Variance-Standard_Deviation_Calculator/
+│   ├── main.py
+│   ├── mean_var_std.py
+│   └── test_module.py
 ├── Demographic_Data_Analyzer/
 ├── Medical_Data_Visualizer/
 │   ├── main.py
@@ -35,7 +38,7 @@ DataAnalysisWithPython/
 │   ├── output/
 │   │   ├── catplot.png
 │   │   └── heatmap.png
-│   └── README.md
+│   └── OVERVIEW_MedicalDataVisualizer.md
 ├── Page_View_Time_Series_Visualizer/
 └── Sea_Level_Predictor/
 ```
@@ -44,7 +47,7 @@ DataAnalysisWithPython/
 
 ## Projects
 
-### 1. Mean-Variance-Standard Deviation Calculator
+### 1. Mean-Variance-Standard Deviation Calculator ✅
 > Calculate the mean, variance, standard deviation, max, min, and sum of rows, columns, and elements using Numpy.
 
 ### 2. Demographic Data Analyzer
