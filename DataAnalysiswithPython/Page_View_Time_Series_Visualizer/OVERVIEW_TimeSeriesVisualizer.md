@@ -19,7 +19,9 @@ his project visualizes time series data using line charts, bar charts, and box p
 ---
 
 ## Test Results
+Ran 11 tests in 6.409s
 
+`FAILED (errors=1)`
 ---
 
 ## Tools & Libraries
@@ -35,4 +37,3 @@ his project visualizes time series data using line charts, bar charts, and box p
 ## References
 
 - [freeCodeCamp – Page View Time Series Visualizer Project](https://freecodecamp.org)
-- [freeCodeCamp Boilerplate Repository](https://github.com)
