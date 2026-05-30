@@ -1,6 +1,6 @@
 # Time Series Visualizer
 
-Still debugging — `test_data_cleaning` fails due to a **pandas 3.0 incompatibility in the freeCodeCamp test file**, not the project code. All 3 charts generate correctly.
+`test_data_cleaning` fails due to a **pandas 3.0 incompatibility in the freeCodeCamp test file**, not the project code. All 3 charts generate correctly.
 
 ---
 
@@ -75,7 +75,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/freeCodeCamp/boilerpla
 ## Test Results
 
 ```
-Ran 11 tests in 6.409s
+Ran 11 tests in 5.124s
 
 FAILED (errors=1)
 ```
