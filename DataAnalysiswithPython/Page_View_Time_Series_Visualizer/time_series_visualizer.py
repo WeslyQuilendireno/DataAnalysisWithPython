@@ -6,6 +6,7 @@ register_matplotlib_converters()
 
 # Import data
 df = pd.read_csv('fcc-forum-pageviews.csv', index_col='date', parse_dates=True)
+df.columns = ['value']
 
 # Clean data
 df = df[
@@ -28,12 +29,9 @@ def draw_bar_plot():
     df_bar = df.copy()
     df_bar['year'] = df_bar.index.year
     df_bar['month'] = df_bar.index.month
-
     df_bar = df_bar.groupby(['year', 'month'])['value'].mean().unstack()
-
     df_bar.columns = ['January', 'February', 'March', 'April', 'May', 'June',
                       'July', 'August', 'September', 'October', 'November', 'December']
-
     fig = df_bar.plot(kind='bar', figsize=(15, 8)).get_figure()
     plt.xlabel('Years')
     plt.ylabel('Average Page Views')
@@ -52,12 +50,12 @@ def draw_box_plot():
 
     fig, axes = plt.subplots(1, 2, figsize=(20, 8))
 
-    sns.boxplot(x='year', y='value', data=df_box, ax=axes[0])
+    sns.boxplot(x='year', y='value', data=df_box, ax=axes[0], orient='v')
     axes[0].set_title('Year-wise Box Plot (Trend)')
     axes[0].set_xlabel('Year')
     axes[0].set_ylabel('Page Views')
 
-    sns.boxplot(x='month', y='value', data=df_box, ax=axes[1],
+    sns.boxplot(x='month', y='value', data=df_box, ax=axes[1], orient='v',
                 order=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
                        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
     axes[1].set_title('Month-wise Box Plot (Seasonality)')
